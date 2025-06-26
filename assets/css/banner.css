@@ -1,0 +1,61 @@
+.banner {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.banner .banner-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+.banner .banner-content-wrapper {
+    position: absolute;
+    top: 211px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.banner .banner-text-content {
+    width: 100%;
+    max-width: 603px;
+}
+
+.banner .section-description:first-child {
+    color: var(--primary-accent-color);
+    margin-bottom: 40px;
+}
+
+.banner .section-description:last-child {
+    color: var(--color-secondary);
+}
+
+.banner .section-heading {
+    color: var(--color-primary);
+    margin-bottom: 50px;
+}
+
+.banner .banner-right-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-accent-color);
+    border-radius: 43.19px;
+    margin-left: 124px;
+}
+
+.banner .vaccine-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
