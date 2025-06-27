@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="assets/css/style.css " />
-        <link rel="stylesheet" href="assets/css/fonts.css " />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- header css -->
-        <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/style.css " />
+    <link rel="stylesheet" href="assets/css/fonts.css " />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-        <!-- banner css -->
-        <link rel="stylesheet" href="assets/css/banner.css" />
+    <!-- header css -->
+    <link rel="stylesheet" href="assets/css/header.css" />
 
-        <!-- check covid css -->
-        <link rel="stylesheet" href="assets/css/check-covid.css" />
+    <!-- banner css -->
+    <link rel="stylesheet" href="assets/css/banner.css" />
 
-        <title>vaccination - Home</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <nav>
-                    <a href="" class="brand-logo"> Vaccination.ng </a>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="" class="nav-link active-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Schedule</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Contact Us</a>
-                        </li>
-                    </ul>
-                    <a href="" class="btn check-status-btn"> Check Status </a>
-                </nav>
-            </div>
-        </header>
+    <!-- check covid css -->
+    <link rel="stylesheet" href="assets/css/check-covid.css" />
 
-        <!-- <section class="banner">
-            <div class="banner-img-wrapper">
-                <picture>
-                    <source
-                        media="(max-width:526px)"
-                        srcset="assets/image/banner-img-sm.webp"
-                    />
-                    <source
-                        media="(max-width:867px)"
-                        srcset="assets/image/banner-img-md.webp"
-                    />
-                    <img
-                        src="assets/image/banner-img-lg.webp"
-                        width="1440"
-                        height="1024"
-                        alt="banner image"
-                        class="banner-img"
-                    />
-                </picture>
-            </div>
-            <div class="container">
-                <div class="banner-content-wrapper">
-                    <div class="banner-left-content">
-                        <div class="banner-text-content">
-                            <h2 class="section-description">
-                                Get Vaccinated. Boost your Immune System
-                            </h2>
-                            <h1 class="section-heading">
-                                COVID-19 Vaccination Got Easier With,
-                                Vaccination.ng
-                            </h1>
-                            <h2 class="section-description">
-                                Vaccination.ng will help you find the nearest
-                                centre for vaccination, in all 36 states in
-                                Nigeria.
-                            </h2>
-                        </div>
+    <title>vaccination - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="" class="brand-logo"> Vaccination.ng </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="" class="btn check-status-btn"> Check Status </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <picture>
+            <source media="(max-width:526px)" srcset="assets/image/banner-img-sm.webp" />
+            <source media="(max-width:1081px)" srcset="assets/image/banner-img-md.webp" />
+            <img src="assets/image/banner-img-lg.webp" alt="" class="banner-img" width="1440" height="1024">
+        </picture>
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-left">
+                    <h3 class="section-description">
+                        Get Vaccinated. Boost your Immune System
+                    </h3>
+                    <h2 class="section-heading">
+                        COVID-19 Vaccination Got Easier With, <span>Vaccination.ng</span>
+                    </h2>
+                    <h3 class="section-description light">
+                        Vaccination.ng will help you find the nearest centre for vaccination, in all 36 states in
+                        Nigeria.
+                    </h3>
+                    <div class="banner-btns">
+                        <a href="" class="btn get-vaccine-btn">Get Vaccine</a>
+                        <a href="" class="btn help-center-btn">Help Center</a>
                     </div>
-                    <div class="banner-right-image-wrapper">
+                </div>
+                <div class="banner-right">
+                    <div class="banner-swiper-container">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/image/vaccine-img-md.webp" alt="" class="vaccine-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/image/vaccine-img-md.webp" alt="" class="vaccine-img">
+                                </div>
+                            </div>
+                        </div>
                         <picture>
-                            <img src="assets/image/vaccine-img-lg.webp" alt="" class="vaccine-img">
+                            <source media="(max-width:526px)" srcset="assets/image/swiper-left-sm.webp"/>
+                            <img src="assets/image/swiper-left.webp" width="80" height="65" alt="" class="swiper-left-fixed-img">
                         </picture>
+                        <img src="assets/image/swiper-right.webp" width="80" height="65" alt=""
+                            class="swiper-right-fixed-img">
                     </div>
                 </div>
             </div>
-        </section> -->
+        </div>
+    </section>
 
-        <section class="check-covid">
+    <!-- <section class="check-covid">
             <div class="container">
                 <div class="check-covid-wrapper">
                     <h2 class="section-description">
@@ -108,6 +112,10 @@
                     </form>
                 </div>
             </div>
-        </section>
-    </body>
+        </section> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/banner.js"></script>
+</body>
+
 </html>

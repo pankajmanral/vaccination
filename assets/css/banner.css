@@ -1,42 +1,42 @@
 .banner {
     position: relative;
+}
+
+.banner .container {
+    position: relative;
+    top: 200px;
+}
+
+.banner-img {
+    position: absolute;
     top: 0;
     left: 0;
-}
-
-.banner .banner-img-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-.banner .banner-img {
     width: 100%;
-    height: auto;
     object-fit: cover;
     object-position: center;
-    display: block;
 }
 
-
-.banner .banner-content-wrapper {
-    position: absolute;
-    top: 211px;
+.banner .banner-content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
-.banner .banner-text-content {
+.banner .banner-left {
     width: 100%;
     max-width: 603px;
 }
 
-.banner .section-description:first-child {
+.banner .section-description {
     color: var(--primary-accent-color);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-.banner .section-description:last-child {
+.banner .light {
+    color: var(--color-secondary);
+}
+
+.banner {
     color: var(--color-secondary);
 }
 
@@ -45,17 +45,124 @@
     margin-bottom: 50px;
 }
 
-.banner .banner-right-image-wrapper {
-    position: relative;
-    overflow: hidden;
-    background-color: var(--primary-accent-color);
-    border-radius: 43.19px;
-    margin-left: 124px;
+.banner .section-heading span {
+    color: var(--primary-accent-color);
 }
 
-.banner .vaccine-img{
+.banner .get-vaccine-btn,
+.banner .help-center-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 25px;
+    color: var(--color-primary);
+    border-color: var(--primary-accent-color);
+}
+
+.banner .get-vaccine-btn {
+    background-color: var(--primary-accent-color);
+    margin-right: 20px;
+}
+
+.banner-right {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-swiper-container {
+    position: relative;
+    cursor: grab;
+}
+
+.banner .swiper {
+    width: 100%;
+    max-width: 532px;
+}
+
+.banner .vaccine-img {
+    width: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner .swiper-left-fixed-img,
+.banner .swiper-right-fixed-img {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-primary);
+    padding: 17px 10px;
+    border-radius: 20px;
+}
+
+.banner .swiper-left-fixed-img {
+    left: -50px;
+}
+
+.banner .swiper-right-fixed-img {
+    right: -50px;
+}
+
+@media (max-width:1280px) {
+
+    .banner-img {
+        height: auto;
+    }
+
+    .banner .swiper {
+        max-width: 500px;
+    }
+
+    .banner .banner-left {
+        max-width: 500px;
+    }
+
+    .banner .section-description {
+        font-size: 19px;
+    }
+
+    .banner .section-heading {
+        font-size: 38px;
+    }
+}
+
+@media (max-width:1110px) {
+    .banner .container {
+        top: 115px;
+    }
+
+    .banner .banner-content {
+        flex-direction: column;
+    }
+
+    .banner .banner-left {
+        max-width: 100%;
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width:635px) {
+    .banner .swiper {
+        width: 100%;
+        max-width: 532px;
+    }
+
+    .banner .swiper{
+        max-width: 450px;
+    }
+}
+    
+@media (max-width:568px) {
+    .banner .section-description,
+    .banner .section-heading{
+        margin-bottom: 20px;
+    }
+
+    .banner .swiper{
+        max-width: 400px;
+    }
+
 }
