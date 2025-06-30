@@ -1,0 +1,195 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+
+    /* different font weights */
+    --font-regular: 'Montserrat-400';
+    --font-medium: 'Montserrat-500';
+    --font-semibold: 'Montserrat-600';
+    --font-bold: 'Montserrat-700';
+
+    /* different font weight */
+    --fw-400: '400';
+    --fw-500: '500';
+    --fw-600: '600';
+    --fw-700: '700';
+
+    /* default transition for all */
+    --transition-default: all .3s ease-in-out;
+
+
+    --primary-accent-color: #17C2EC;
+    --secondary-accent-color: #0B153C;
+
+    --color-primary: #FFF;
+    --color-secondary: rgba(255, 255, 255, 0.50);
+    --color-tertiary : #000000;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 83.1875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.btn {
+    border-radius: 1.25rem;
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    border: 0.125rem solid;
+}
+
+.section-heading {
+    font-family: var(--font-bold);
+    font-size: 3rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
+.section-description {
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
+@media (max-width:67.5rem) {
+    .btn {
+        font-size: 0.875rem;
+    }
+}

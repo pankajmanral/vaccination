@@ -1,0 +1,304 @@
+.banner {
+    position: relative;
+}
+
+.banner .banner-content {
+    padding-top: 9.375rem;
+    padding-bottom: 3.125rem;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner .banner-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .banner-left {
+    width: 100%;
+    max-width: 37.6875rem;
+}
+
+.banner .section-description {
+    color: var(--primary-accent-color);
+    margin-bottom: 3.125rem;
+}
+
+.banner .light {
+    color: var(--color-secondary);
+}
+
+.banner {
+    color: var(--color-secondary);
+}
+
+.banner .section-heading {
+    color: var(--color-primary);
+    margin-bottom: 3.125rem;
+}
+
+.banner .section-heading span {
+    color: var(--primary-accent-color);
+}
+
+.banner .get-vaccine-btn,
+.banner .help-center-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.25rem 1.5625rem;
+    color: var(--color-primary);
+    border-color: var(--primary-accent-color);
+    transition: var(--transition-default);
+}
+
+.banner .get-vaccine-btn {
+    background-color: var(--primary-accent-color);
+    margin-right: 1.25rem;
+}
+
+.banner .get-vaccine-btn:hover {
+    background: transparent;
+    color: var(--color-primary);
+}
+
+.banner .help-center-btn:hover {
+    background-color: var(--primary-accent-color);
+}
+
+.banner-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-swiper-container {
+    position: relative;
+    cursor: grab;
+}
+
+.banner .swiper {
+    width: 100%;
+    max-width: 33.25rem;
+}
+
+.banner .vaccine-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner .swiper-left-fixed-img,
+.banner .swiper-right-fixed-img {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-primary);
+    padding: 1.0625rem 0.625rem;
+    border-radius: 1.25rem;
+    width: 100%;
+    max-width: 5rem;
+    height: auto;
+}
+
+.banner .swiper-left-fixed-img {
+    left: -3.125rem;
+}
+
+.banner .swiper-right-fixed-img {
+    right: -3.125rem;
+}
+
+.banner .specialist-drs {
+    position: relative;
+    width: 100%;
+    max-width: 23.375rem;
+    left: -1.875rem;
+    z-index: 1;
+    bottom: 2.0625rem;
+}
+
+.banner .dr-image {
+    position: absolute;
+}
+
+.banner .dr-image:nth-child(2) {
+    left: 3.125rem;
+}
+
+.banner .dr-image:last-child {
+    left: 6.5625rem;
+}
+
+.banner .dr-text-wrapper {
+    position: absolute;
+    left: 11.875rem;
+}
+
+.banner .dr-number {
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
+.banner .specialist {
+    color: var(--primary-accent-color);
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
+.banner .marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+}
+
+.banner .marquee-track {
+    display: flex;
+    gap: 1rem;
+    animation: scrollLeft 20s linear infinite;
+    width: max-content;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.banner .marquee-image-wrapper {
+    width: 100%;
+    max-width: 18rem;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.banner .marquee-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+}
+
+
+@media (max-width:80rem) {
+
+    .banner-img {
+        height: auto;
+    }
+
+    .banner .swiper {
+        max-width: 31.25rem;
+    }
+
+    .banner .banner-left {
+        max-width: 31.25rem;
+    }
+
+    .banner .section-description {
+        font-size: 1.1875rem;
+    }
+
+    .banner .section-heading {
+        font-size: 2.375rem;
+    }
+}
+
+@media (max-width:69.375rem) {
+    .banner .container {
+        top: 7.1875rem;
+    }
+
+    .banner .banner-content {
+        flex-direction: column;
+    }
+
+    .banner .banner-left {
+        max-width: 100%;
+        margin-bottom: 3.4375rem;
+    }
+}
+
+@media (max-width:48.0625rem) {
+    .banner .marquee-image-wrapper {
+        max-width: 9.25rem;
+    }
+
+    .banner .marquee-image-wrapper {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width:39.6875rem) {
+    .banner .swiper {
+        width: 100%;
+        max-width: 33.25rem;
+    }
+
+    .banner .swiper {
+        max-width: 28.125rem;
+    }
+}
+
+@media (max-width:35.5rem) {
+
+    .banner .marquee-image-wrapper {
+        max-width: 4.5rem;
+    }
+
+    .banner .marquee-image-wrapper {
+        margin-left: 0.75rem;
+    }
+
+    .banner .section-description,
+    .banner .section-heading {
+        margin-bottom: 1.25rem;
+    }
+
+    .banner .swiper {
+        max-width: 25rem;
+    }
+
+    .banner .swiper-left-fixed-img,
+    .banner .swiper-right-fixed-img {
+        max-width: 2.5rem;
+    }
+
+    .banner .swiper-left-fixed-img {
+        left: -1.875rem;
+    }
+
+    .banner .swiper-right-fixed-img {
+        right: -1.875rem;
+    }
+
+}
+
+@media (max-width:30.375rem) {
+    .banner .swiper {
+        width: 100%;
+        max-width: 18.75rem;
+    }
+
+}

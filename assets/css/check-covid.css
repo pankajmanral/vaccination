@@ -1,0 +1,152 @@
+.check-covid {
+    padding: 3.875rem 0;
+    background-image: url('/assets/image/banner-img-lg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.check-covid .section-description {
+    color: var(--color-primary);
+    background: rgba(196, 196, 196, 0.05);
+    padding: 2.25rem 5.8125rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.check-covid form {
+    padding: 2.25rem 5.8125rem;
+    background: rgba(196, 196, 196, 0.10);
+    border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.check-covid .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.1875rem;
+}
+
+.check-covid input {
+    background: transparent;
+    border-radius: 1.25rem;
+    outline: none;
+    border: 0.1875rem solid var(--color-secondary);
+    color: var(--color-primar);
+}
+
+.check-covid input:focus {
+    border-color: var(--primary-accent-color);
+}
+
+.check-covid input[type="text"] {
+    flex: 1;
+    padding: 1.25rem 0 1.25rem 1.5625rem;
+    font-size: 1.5rem;
+    color: var(--primary-accent-color);
+}
+
+.check-covid input {
+    margin-right: 1.25rem;
+}
+
+.check-covid input:last-child {
+    margin-right: 0;
+}
+
+.check-covid .check-btn {
+    padding: 1.25rem 2.875rem;
+    background-color: rgba(196, 196, 196, 0.10);
+    color: var(--primary-accent-color);
+    cursor: pointer;
+}
+
+.check-covid .get-certificate {
+    color: var(--primary-accent-color);
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.05);
+    padding: 1.25rem 0;
+    border-radius: 1.25rem;
+}
+
+.check-covid .get-certificate a {
+    display: inline-block;
+    color: var(--primary-accent-color);
+}
+
+@media (max-width:56.375rem) {
+    .check-covid .section-description {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .check-covid form{
+        padding: 2.25rem;
+    }
+
+    .check-covid .form-group {
+        flex-direction: column;
+        margin-bottom: 3.125rem;
+        align-items: flex-start;
+    }
+
+    .check-covid input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+
+    .check-covid input {
+        margin-bottom: 1.25rem;
+    }
+
+    .check-covid input:last-child {
+        margin-bottom: 0;
+    }
+
+    .check-covid .check-btn {
+        width: max-content;
+    }
+
+    .check-covid .get-certificate {
+        font-size: 0.875rem;
+    }
+}
+
+
+@media (max-width:32.8125rem) {
+    .check-covid .section-description {
+        padding: 0.875rem 0rem;
+        font-size: 0.625rem;
+    }
+
+    .check-covid form {
+        padding: 1.3125rem 0.8125rem;
+    }
+
+    .check-covid input {
+        border-radius: 0.625rem;
+    }
+
+    .check-covid input[type="text"] {
+        padding: 1rem 0 1rem 1.0625rem;
+        font-size: 0.75rem;
+    }
+
+    .check-covid .check-btn {
+        padding: 1rem 3.1875rem;
+    }
+
+    .check-covid .get-certificate {
+        font-size: 0.625rem;
+        padding: 1.25rem 1.875rem;
+    }
+
+}

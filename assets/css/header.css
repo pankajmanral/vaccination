@@ -1,0 +1,224 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 10;
+    transition: var(--transition-default);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand-logo {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
+header .brand-logo::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 0.1875rem;
+    background-color: var(--primary-accent-color);
+    transition: var(--transition-default);
+}
+
+header .brand-logo:hover:after{
+    width: 100%;
+}
+
+header .nav-list {
+    display: flex;
+}
+
+header .nav-item {
+    margin-left: 1.5625rem;
+}
+
+header .nav-item:first-child {
+    margin-left: 0;
+}
+
+header .nav-link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 1.0625rem 0;
+    color: var(--color-secondary);
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    transition: var(--transition-default);
+}
+
+header .nav-link.active-link {
+    color: var(--color-primary);
+}
+
+header .nav-link::after {
+    position: absolute;
+    content: '';
+    display: none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.625rem;
+    width: 0.625rem;
+    background-color: var(--primary-accent-color);
+    border-radius: 100%;
+}
+
+header .nav-link:hover::after {
+    display: block;
+}
+
+header .check-status-btn {
+    text-decoration: none;
+    padding: 1.25rem 1.625rem;
+    background-color: var(--color-secondary);
+    color: var(--primary-accent-color);
+    border-color: none;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+    margin: 1.25rem 0;
+    transition: var(--transition-default);
+}
+
+header .check-status-btn:hover{
+    background: transparent;
+}
+
+header .hamburger {
+    display: none;
+}
+
+header aside {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    top: 0rem;
+    left: 0rem;
+    transform: translateX(-100%);
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    padding-top: 2rem;
+}
+
+header aside .mobile-nav-items {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.3125rem 0;
+    color: var(--primary-bg);
+}
+
+
+@media (max-width:67.5rem) {
+    header .brand-logo {
+        font-size: 1.125rem;
+    }
+
+    header .nav-item {
+        margin-left: 1.25rem;
+    }
+
+    header .nav-link {
+        padding: 1.0625rem 0;
+        font-size: 0.875rem;
+    }
+
+    header .check-status-btn {
+        padding: 0.9375rem 1.3125rem;
+    }
+}
+
+@media (max-width:62rem) {
+
+    header .brand-logo {
+        margin: 1.5625rem 0;
+    }
+
+    header .nav-item,
+    header .check-status-btn {
+        display: none;
+    }
+
+    header .nav-list {
+        display: none;
+    }
+
+    header .hamburger {
+        position: relative;
+        display: block;
+        height: 1.875rem;
+        width: 1.875rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    header .line {
+        position: absolute;
+        width: 90%;
+        background-color: white;
+        height: 0.1875rem;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    header .line:first-child {
+        top: 0.3125rem;
+    }
+
+    header .line:nth-child(2) {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .line:last-child {
+        bottom: 0.3125rem;
+    }
+
+    .open .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .open .line:first-child {
+        transform: rotate(45deg);
+        left: 0.125rem;
+        top: 0.875rem;
+    }
+
+    .open .line:last-child {
+        transform: rotate(-45deg);
+        left: 0.125rem;
+        top: 0.875rem;
+    }
+
+    header .mobile-nav-list {
+        list-style-type: none;
+    }
+
+    header .mobile-nav-items {
+        padding: 0 1.875rem;
+        margin-bottom: 0.625rem;
+    }
+
+    header .mobile-nav-links {
+        text-decoration: none;
+        font-family: var(--font-regular);
+        color: var(--secondary-accent-color);
+    }
+}

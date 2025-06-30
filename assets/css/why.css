@@ -1,0 +1,126 @@
+.why {
+    position: relative;
+    background-image: url('../image/banner-img-lg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4.9375rem 0;
+}
+
+.why .why-text-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.why .why-heading {
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-size: 2.9937rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    width: 100%;
+    max-width: 31.4375rem;
+    margin-bottom: 1.25rem;
+}
+
+.why .why-description {
+    max-width: 33.5rem;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: var(--font-medium);
+    font-size: 1.2474rem;
+    font-weight: var(--fw-400);
+}
+
+.why .why-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.why .card {
+    max-height: 100%;
+    height: 21.8125rem;
+    width: 100%;
+    max-width: 21.8125rem;
+    padding: 1.25rem;
+    border: 0.1875rem solid var(--color-secondary);
+    border-radius: 3.125rem;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.why .card-logo {
+    padding: 0.625rem;
+    background-color: rgba(196, 196, 196, 0.10);
+    border-radius: 1.3125rem;
+    margin-bottom: 2.5rem;
+}
+
+.why .card-title {
+    max-width: 21.8125rem;
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    margin-bottom: 1.8125rem;
+}
+
+.why .card-description {
+    color: var(--color-secondary);
+    font-family: var(--font-medium);
+    font-size: 1.1227rem;
+    font-weight: var(--fw-500);
+    margin-bottom: 2.6875rem;
+    transition: all .3s ease-in-out;
+    height: 0;
+    opacity: 0;
+}
+
+.why .read-more {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    font-family: var(--font-bold);
+    font-size: 1.1227rem;
+    font-weight: var(--fw-700);
+    text-decoration: none;
+}
+
+.why .card:hover {
+    border-radius: 3.125rem 9.375rem 3.125rem 3.125rem;
+    background-color: rgba(196, 196, 196, 0.20);
+}
+
+.why .card:hover>.card-description {
+    height: 15%;
+    opacity: 1;
+}
+
+.why .card:hover .card-title {
+    color: var(--primary-accent-color);
+}
+
+.why .card:hover .read-more {
+    color: var(--primary-accent-color);
+}
+
+@media (max-width:48.0625rem) {
+    .why .why-heading {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width:48.0625rem) {
+    .why .why-heading {
+        font-size: 1.5rem;
+    }
+
+    .why .why-description {
+        font-size: 0.875rem;
+    }
+}
+

@@ -1,0 +1,303 @@
+.prevention {
+    background-image: url('../image/banner-img-lg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 4.0625rem;
+    padding-bottom: 0.625rem;
+}
+
+.prevention .section-description,
+.prevention .heading,
+.prevention .section-heading {
+    text-align: center;
+}
+
+.prevention .heading {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+
+.prevention .section-description {
+    color: var(--color-primary);
+    margin-bottom: 1.25rem;
+}
+
+.prevention .section-description {
+    color: var(--color-secondary);
+}
+
+.prevention .section-heading {
+    color: var(--color-primary);
+    margin-bottom: 2.5rem;
+}
+
+.prevention .section-heading span {
+    color: var(--primary-accent-color);
+}
+
+.prevention .prevention-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 11.1875rem;
+}
+
+.prevention .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 44.25rem;
+}
+
+.prevention .headache-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.prevention .symptopms-card {
+    position: absolute;
+    width: 100%;
+    max-width: 18.75rem;
+    top: 0%;
+    left: -10%;
+}
+
+.prevention .corona-img-wrapper {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    max-width: 6.25rem;
+}
+
+.prevention .corona-img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.prevention .symptopms-card:nth-child(2) {
+    top: 40%;
+    left: -20%;
+}
+
+.prevention .symptopms-card:nth-child(3) {
+    top: 80%;
+    left: -30%;
+}
+
+.prevention .symptopms-card:nth-child(4) {
+    top: 0%;
+    left: 75%;
+}
+
+.prevention .symptopms-card:nth-child(5) {
+    top: 40%;
+    left: 85%;
+}
+
+.prevention .symptopms-card:nth-child(6) {
+    top: 80%;
+    left: 90%;
+}
+
+.prevention .card-wrapper {
+    border-radius: 0.625rem;
+    height: 4.375rem;
+    background: rgba(196, 196, 196, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.0625rem solid black;
+    position: relative;
+    border: none;
+}
+
+.prevention .symptom {
+    color: var(--primary-accent-color);
+    text-align: center;
+    font-family: var(--font-semibold);
+    font-size: 1.25rem;
+    font-weight: var(--fw-600);
+    line-height: normal;
+}
+
+.prevention .corona-img {
+    position: absolute;
+    left: -2.5rem;
+}
+
+@media (max-width:76.3125rem) {
+    .prevention .symptopms-card {
+        max-width: 12.5rem;
+    }
+
+    .prevention .corona-img-wrapper {
+        max-width: 2.8125rem;
+        left: 1.875rem;
+        top: 0.1875rem;
+    }
+
+    .prevention .corona-img {
+        width: 100%;
+    }
+
+    .prevention .card-wrapper {
+        height: 2.8125rem;
+    }
+
+    .prevention .symptopms-card {
+        top: 0%;
+        left: 10%;
+    }
+
+    .prevention .symptopms-card:nth-child(2) {
+        top: 40%;
+        left: -5%;
+    }
+
+    .prevention .symptopms-card:nth-child(3) {
+        top: 80%;
+        left: -15%;
+    }
+
+    .prevention .symptopms-card:nth-child(4) {
+        top: 0%;
+        left: 65%;
+    }
+
+    .prevention .symptopms-card:nth-child(5) {
+        top: 40%;
+        left: 75%;
+    }
+
+    .prevention .symptopms-card:nth-child(6) {
+        top: 80%;
+        left: 90%;
+    }
+
+}
+
+@media (max-width:62rem) {
+    .prevention .prevention-image-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 3.125rem;
+    }
+
+    .prevention .image-wrapper {
+        max-width: 18.75rem;
+    }
+
+    .prevention .symptopms-card {
+        top: 0%;
+        left: -25%;
+    }
+
+    .prevention .symptopms-card:nth-child(2) {
+        top: 40%;
+        left: -45%;
+    }
+
+    .prevention .symptopms-card:nth-child(3) {
+        top: 80%;
+        left: -60%;
+    }
+
+    .prevention .symptopms-card:nth-child(4) {
+        top: 0%;
+        left: 65%;
+    }
+
+    .prevention .symptopms-card:nth-child(5) {
+        top: 40%;
+        left: 84%;
+    }
+
+    .prevention .symptopms-card:nth-child(6) {
+        top: 80%;
+        left: 106%;
+    }
+}
+
+@media (max-width:48.0625rem) {
+
+    .prevention .heading {
+        font-size: 1.25rem;
+    }
+
+    .prevention .section-heading {
+        font-size: 2.25rem;
+    }
+
+    .prevention .section-description {
+        font-size: 1.125rem;
+    }
+
+
+    .prevention .image-wrapper {
+        max-width: 15.625rem;
+    }
+
+    .prevention .corona-img-wrapper {
+        max-width: 2.8125rem;
+        left: 1.25rem;
+    }
+
+    .prevention .symptom {
+        font-size: 0.75rem;
+    }
+
+    .prevention .card-wrapper {
+        height: 1.875rem;
+    }
+
+    .prevention .corona-img-wrapper {
+        max-width: 1.875rem;
+        left: 1.5625rem;
+    }
+
+    .prevention .symptopms-card {
+        max-width: 6.25rem;
+    }
+
+    .prevention .symptopms-card {
+        top: 0%;
+        left: 0%;
+    }
+
+    .prevention .symptopms-card:nth-child(2) {
+        top: 40%;
+        left: -10%;
+    }
+
+    .prevention .symptopms-card:nth-child(3) {
+        top: 80%;
+        left: -20%;
+    }
+
+    .prevention .symptopms-card:nth-child(5) {
+        top: 40%;
+        left: 80%;
+    }
+
+    .prevention .symptopms-card:nth-child(6) {
+        top: 80%;
+        left: 89%;
+    }
+}
+
+@media (max-width:32.8125rem) {
+    .prevention .prevention-image-wrapper {
+        margin-top: 3.125rem;
+    }
+
+    .prevention .image-wrapper {
+        max-width: 12.5rem;
+    }
+}

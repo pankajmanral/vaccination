@@ -1,0 +1,198 @@
+    .patient {
+    position: relative;
+    padding: 3.5625rem 0 12.5rem 0;
+}
+
+.patient .text-container {
+    width: 100%;
+    max-width: 59.5625rem;
+    margin: 0 auto;
+}
+
+.patient .section-title {
+    color: var(--primary-accent-color);
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+
+.patient .section-heading {
+    color: var(--color-tertiary);
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 3rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    margin-bottom: 2.5rem;
+}
+
+.patient .section-description {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: var(--font-regular);
+    font-size: 1.5rem;
+    font-weight: var(--fw-500);
+    line-height: normal;
+    margin-bottom: 7.5rem;
+}
+
+.patient .patient-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -1.4063rem;
+}
+
+.patient .patient-card {
+    position: relative;
+    width: 100%;
+    max-width: 20.8125rem;
+    padding: 2.6875rem 2.0625rem;
+    border-radius: 1.25rem;
+    background: rgba(196, 196, 196, 0.50);
+    margin: 1.4063rem;
+    transition: var(--transition-default);
+    cursor: pointer;
+}
+
+.patient .patient-card:hover {
+    background-color: var(--primary-accent-color);
+}
+
+.patient .vaccine-img {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.patient .patient-image-wrapper {
+    width: 100%;
+    max-width: 4.375rem;
+}
+
+.patient .patient-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.patient .about-patient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.patient .patient-name {
+    margin-left: 1.25rem;
+}
+
+.patient .name {
+    color: var(--color-tertiary);
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
+.patient .location {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: left;
+    font-family: var(--font-bold);
+    font-size: 0.875rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
+.patient .review {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: var(--font-regular);
+    font-size: 1.125rem;
+    font-weight: var(--fw-500);
+    line-height: normal;
+}
+
+@media (max-width:48.0625rem) {
+
+    .patient .section-title {
+        font-size: 1.25rem;
+    }
+
+    .patient .section-heading{
+        font-size: 2.25rem;
+    }
+
+    .patient .section-description{
+        font-size: 1.125rem;
+    }
+
+    .patient .patient-wrapper {
+        flex-direction: column;
+    }
+
+    .patient .vaccine-img {
+        top: 40%;
+    }
+
+}
+
+@media (max-width:32.875rem) {
+
+
+    .patient{
+        padding: 3.5625rem 0 6.25rem 0;
+    }
+
+    .patient .section-title {
+        font-size: 0.875rem;
+    }
+
+    .patient .section-heading{
+        font-size: 1.5rem;
+    }
+
+    .patient .section-description{
+        font-size: 0.75rem;
+    }
+
+    .patient .patient-card {
+        padding: 2.6875rem 1.375rem;
+        max-width: 19.0625rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .patient .about-patient {
+        margin-bottom: 2.5rem;
+    }
+
+    .patient .patient-image-wrapper {
+        max-width: 3.25rem;
+    }
+
+    .patient .patient-name {
+        margin-left: 0.9375rem;
+    }
+
+    .patient .name {
+        font-size: 0.875rem;
+    }
+
+    .patient .location {
+        font-size: 0.5625rem;
+    }
+
+    .patient .review {
+        font-size: 0.75rem;
+        width: 100%;
+        max-width: 15.8125rem;
+        margin: 0 auto;
+    }
+}

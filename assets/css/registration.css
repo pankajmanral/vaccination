@@ -1,0 +1,277 @@
+.registration {
+    position: relative;
+    padding: 2.5rem 0;
+}
+
+.registration .registration-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration .registration-left-content {
+    width: 100%;
+    max-width: 40.625rem;
+}
+
+.registration .section-heading {
+    margin-bottom: 2.5rem;
+}
+
+.registration .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.registration label {
+    color: var(--color-tertiary);
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    font-weight: var(--fw-700);
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+
+.registration input {
+    padding: 1.25rem 1.875rem;
+    color: var(--color-tertiary);
+    font-family: var(--font-medium);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: normal;
+    border-radius: 1.25rem;
+    background: rgba(11, 21, 60, 0.15);
+    outline: none;
+    border: none;
+}
+
+.registration input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+    font-family: var(--font-medium);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: var(--fw-500);
+    line-height: normal;
+}
+
+.registration .notification {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: var(--font-medium);
+    font-size: 1.25rem;
+    font-weight: var(--fw-500);
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+
+.registration .phone-number-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.registration .flag {
+    position: absolute;
+    bottom: 0.9375rem;
+    left: 1.25rem;
+}
+
+#phone-number {
+    padding-left: 5rem;
+    width: 100%;
+}
+
+.registration .verify {
+    display: inline-block;
+    padding: 1.25rem 4.375rem;
+    background-color: var(--primary-accent-color);
+    border-color: var(--primary-accent-color);
+    color: var(--color-primary);
+    cursor: pointer;
+    margin-left: 2.25rem;
+    transition: var(--transition-default);
+}
+
+.registration .verify:hover {
+    background: transparent;
+    color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+}
+
+.registration .submit-btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25rem 0;
+    width: 100%;
+    background-color: var(--primary-accent-color);
+    color: var(--color-primary);
+    margin-bottom: 2.5rem;
+    transition: var(--transition-default);
+}
+
+.registration .submit-btn:hover {
+    background: transparent;
+    color: var(--color-tertiary);
+}
+
+.registration .already-registered {
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.registration .already,
+.registration .check-status {
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--font-semibold);
+    font-size: 1.25rem;
+    font-weight: var(--fw-600);
+    line-height: normal;
+}
+
+.registration .already {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.registration .check-status {
+    margin-left: 2.875rem;
+    color: var(--primary-accent-color);
+}
+
+.registration .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration .registration-image-wrapper-sm {
+    display: none;
+}
+
+.registration .registration-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.registration .covid-vaccination-image {
+    position: relative;
+    position: relative;
+    width: 100%;
+    max-width: 23.5rem;
+}
+
+.registration .vaccination-img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-accent-color);
+    object-position: center;
+    border-radius: 1.25rem;
+}
+
+.registration .virus-img {
+    position: absolute;
+    left: -2.1875rem;
+    top: -1.875rem;
+}
+
+@media (max-width:68.125rem) {
+    .registration .registration-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .registration .registration-left-content {
+        max-width: 100%;
+    }
+
+    .registration input {
+        border-radius: 0.625rem;
+    }
+
+    .registration .registration-image-wrapper {
+        display: none;
+    }
+
+    .registration .registration-image-wrapper-sm {
+        display: flex;
+        margin-left: 2.5rem;
+        margin-bottom: 4.375rem;
+    }
+
+
+}
+
+@media (max-width:35.0625rem) {
+
+    .registration .section-heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .registration .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .registration label {
+        font-size: 0.875rem;
+    }
+
+    .registration input {
+        padding: 1rem 1.25rem;
+        font-size: 0.875rem;
+    }
+
+    .registration .notification {
+        font-size: 0.875rem;
+    }
+
+    .registration input[type="text"]::placeholder {
+        font-size: 0.875rem;
+    }
+
+    .registration .input-wrapper {
+        flex-direction: column;
+    }
+
+    .registration .flag {
+        bottom: 5.3125rem;
+    }
+
+    .registration .verify {
+        padding: 1.25rem 4.375rem;
+        margin-left: 0rem;
+        width: max-content;
+        margin-top: 1.25rem;
+    }
+
+    #phone-number {
+        width: auto;
+    }
+
+    .registration .registration-image-wrapper-sm {
+        display: flex;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-bottom: 2.1875rem;
+    }
+
+    .registration .covid-vaccination-image {
+        max-width: 17.25rem;
+    }
+
+    .registration .already-registered {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .registration .already,
+    .registration .check-status {
+        font-size: 0.875rem;
+    }
+
+    .registration .check-status {
+        margin-left: 0rem;
+    }
+
+}

@@ -1,0 +1,8 @@
+.home-wrapper{
+    background-image: url('/assets/image/banner-img-lg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
