@@ -103,6 +103,7 @@ section {
 }
 
 body {
+
     line-height: 1;
 }
 
@@ -138,10 +139,10 @@ table {
     --font-bold: 'Montserrat-700';
 
     /* different font weight */
-    --fw-400: '400';
-    --fw-500: '500';
-    --fw-600: '600';
-    --fw-700: '700';
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
 
     /* default transition for all */
     --transition-default: all .3s ease-in-out;

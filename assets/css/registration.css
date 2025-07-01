@@ -155,12 +155,12 @@
 
 .registration .covid-vaccination-image {
     position: relative;
-    position: relative;
     width: 100%;
     max-width: 23.5rem;
 }
 
 .registration .vaccination-img {
+    display: block;
     object-fit: cover;
     width: 100%;
     height: auto;
@@ -169,10 +169,38 @@
     border-radius: 1.25rem;
 }
 
+.registration .text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-primary);
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 24px;
+    font-weight: var(--fw-700);
+    line-height: normal;
+}
+
 .registration .virus-img {
     position: absolute;
     left: -2.1875rem;
     top: -1.875rem;
+}
+
+.registration .verify-status-btn {
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.25);
+    border: none;
+    color: var(--color-primary);
+    padding: 13px 33px;
+    text-wrap: nowrap;
 }
 
 @media (max-width:68.125rem) {
@@ -194,15 +222,47 @@
     }
 
     .registration .registration-image-wrapper-sm {
-        display: flex;
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 340px;
         margin-left: 2.5rem;
         margin-bottom: 4.375rem;
+    }
+
+    .registration .text-sm {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--color-primary);
+        text-align: center;
+        font-family: var(--font-bold);
+        font-size: 24px;
+        font-weight: var(--fw-700);
+        line-height: normal;
+        z-index: 1;
+    }
+
+    .registration .verify-status-btn-sm {
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        background: rgba(196, 196, 196, 0.25);
+        border: none;
+        color: var(--color-primary);
+        padding: 13px 33px;
+        text-wrap: nowrap;
     }
 
 
 }
 
-@media (max-width:35.0625rem) {
+@media (max-width:561px) {
 
     .registration .section-heading {
         font-size: 1.5rem;
