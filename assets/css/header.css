@@ -106,7 +106,7 @@ header .hamburger {
 
 header aside {
     position: fixed;
-    width: 30%;
+    width: 80%;
     height: 100%;
     background-color: white;
     top: 0rem;
@@ -166,11 +166,15 @@ header aside .mobile-nav-items {
         height: 1.875rem;
         width: 1.875rem;
         transition: all 0.2s ease-in-out;
+        background-color: rgba(196, 196, 196, 0.20);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
     header .line {
         position: absolute;
-        width: 90%;
+        width: 70%;
         background-color: white;
         height: 0.1875rem;
         left: 50%;
@@ -179,7 +183,7 @@ header aside .mobile-nav-items {
     }
 
     header .line:first-child {
-        top: 0.3125rem;
+        top: 10px;
     }
 
     header .line:nth-child(2) {
@@ -188,7 +192,7 @@ header aside .mobile-nav-items {
     }
 
     header .line:last-child {
-        bottom: 0.3125rem;
+        bottom: 10px;
     }
 
     .open .line:nth-child(2) {
@@ -197,14 +201,14 @@ header aside .mobile-nav-items {
 
     .open .line:first-child {
         transform: rotate(45deg);
-        left: 0.125rem;
-        top: 0.875rem;
+        left: 6px;
+        top: 18px;
     }
 
     .open .line:last-child {
         transform: rotate(-45deg);
-        left: 0.125rem;
-        top: 0.875rem;
+        left: 6px;
+        top: 18px;
     }
 
     header .mobile-nav-list {

@@ -201,6 +201,11 @@
     color: var(--color-primary);
     padding: 13px 33px;
     text-wrap: nowrap;
+    transition: var(--transition-default);
+}
+
+.registration .verify-status-btn:hover{
+    background-color: var(--primary-accent-color);
 }
 
 @media (max-width:68.125rem) {
@@ -257,8 +262,13 @@
         color: var(--color-primary);
         padding: 13px 33px;
         text-wrap: nowrap;
+        transition: var(--transition-default
+        );
     }
 
+    .registration .verify-status-btn-sm:hover{
+        background-color: var(--primary-accent-color);
+    }
 
 }
 

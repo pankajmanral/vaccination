@@ -53,7 +53,7 @@
     max-width: 20.8125rem;
     padding: 2.6875rem 2.0625rem;
     border-radius: 1.25rem;
-    background-color: rgba(196, 196, 196, 0.50);
+    background: rgba(196, 196, 196, 0.50);
     margin: 1.4063rem;
     transition: var(--transition-default);
     cursor: pointer;
@@ -63,12 +63,18 @@
     background-color: var(--primary-accent-color);
 }
 
+.patient .patient-card:hover .name,
+.patient .patient-card:hover .location,
+.patient .patient-card:hover .review{
+    color: var(--color-primary);
+}
+
+
 .patient .vaccine-img {
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 .patient .patient-image-wrapper {
@@ -166,12 +172,12 @@
 
     .patient .patient-card {
         padding: 2.6875rem 1.375rem;
-        max-width: 19.0625rem;
+        max-width: 18.0625rem;
         margin-bottom: 3.125rem;
     }
 
     .patient .about-patient {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.875rem;
     }
 
     .patient .patient-image-wrapper {

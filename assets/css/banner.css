@@ -209,7 +209,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 60px;
+    padding: 50px 10px;
     margin: -10px;
 }
 
@@ -270,6 +270,12 @@
     padding: 20px 25px;
     background-color: var(--primary-accent-color);
     border-color: var(--primary-accent-color);
+    transition: var(--transition-default);
+}
+
+.banner .submit-btn:hover {
+    background: transparent;
+    color: var(--color-primary);
 }
 
 .banner .marquee {
@@ -352,6 +358,35 @@
 }
 
 @media (max-width:769px) {
+
+    .banner .card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner .card:first-child {
+        max-width: 317px;
+    }
+
+    .banner .card:nth-child(2) {
+        max-width: 300px;
+    }
+
+    .banner .card:nth-child(3) {
+        max-width: 240px;
+    }
+
+    .banner .submit-btn {
+        padding: 20px 99px;
+    }
+
+    .banner .card-logo {
+        display: inline;
+        border-radius: 10px;
+        background: rgba(196, 196, 196, 0.10);
+        padding: 10px;
+    }
+
     .banner .marquee-image-wrapper {
         max-width: 148px;
     }
@@ -434,6 +469,26 @@
         font-size: 14px;
     }
 
+    .banner .schedule-text {
+        font-size: 14px;
+    }
+
+    .banner .schedule-wrapper {
+        padding: 10px;
+    }
+
+    .banner .card-title {
+        font-size: 14px;
+    }
+
+    .banner .card-description {
+        font-size: 14px;
+    }
+
+    .banner .submit-btn {
+        font-size: 14px;
+        padding: 16px 48px;
+    }
 }
 
 @media (max-width:486px) {
