@@ -40,6 +40,8 @@
     align-items: flex-end;
     min-height: 390px;
     margin: -20px;
+    height: 100%;
+    min-height: 500px;
 }
 
 .why .card {
@@ -82,12 +84,12 @@
     margin-bottom: 2.6875rem;
     height: 0;
     opacity: 0;
-    transition: all .6s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .why .card:hover .card-description {
     color: var(--color-primary);
-    height: 92px;
+    height: 60px;
     opacity: 1;
 }
 

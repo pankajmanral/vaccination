@@ -53,6 +53,7 @@ footer .input-container {
     position: relative;
 }
 
+
 footer input {
     box-sizing: border-box;
     width: 100%;
@@ -114,6 +115,11 @@ footer .brand-logo::after {
     width: 40%;
     height: 0.1875rem;
     background-color: var(--primary-accent-color);
+    transition: var(--transition-default);
+}
+
+footer .brand-logo:hover:after{
+    width: 100%;
 }
 
 footer .footer-list,

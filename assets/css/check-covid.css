@@ -22,12 +22,17 @@
     border-radius: 0 0 1.25rem 1.25rem;
 }
 
-.check-covid .form-group {
+/* .check-covid .form-group {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2.1875rem;
 }
+
+.check-covid .input-group{
+    flex: 1;
+}
+
 
 .check-covid input {
     background: transparent;
@@ -42,7 +47,7 @@
 }
 
 .check-covid input[type="text"] {
-    flex: 1;
+    width: 100%;
     padding: 1.25rem 0 1.25rem 1.5625rem;
     font-size: 1.5rem;
     color: var(--primary-accent-color);
@@ -61,6 +66,52 @@
     background-color: rgba(196, 196, 196, 0.10);
     color: var(--primary-accent-color);
     cursor: pointer;
+} */
+
+.check-covid .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.check-covid .form-group {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.error{
+    position: absolute;
+    bottom: -30px;
+    left: 5px;
+    color: var(--color-primary);
+    display: block;
+    font-family: var(--font-semibold);
+    display: none;
+}
+
+.check-covid input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 0 20px 25px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: var(--primary-accent-color);
+    background: rgba(196, 196, 196, 0.10);
+    outline: none;
+    border: 3px solid var(--primary-accent-color);;
+}
+
+.check-covid .check-btn {
+    padding: 1.25rem 2.875rem;
+    background-color: rgba(196, 196, 196, 0.10);
+    color: var(--primary-accent-color);
+    cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .check-covid .get-certificate {
@@ -87,7 +138,7 @@
         font-size: 1.25rem;
     }
 
-    .check-covid form{
+    .check-covid form {
         padding: 2.25rem;
     }
 
